@@ -1,6 +1,0 @@
-* checking bat voltage and solar charging and sending in 1 every 3 level send using prgm counter flag
-* using sleep period flag system going to sleep for saving power. duration based on flag value.
-* level btween 25-85 sleep 4 time
-* level between 18-92 sleep 2 time
-* else sleep 1 time
-* each sleep time is 8 sec

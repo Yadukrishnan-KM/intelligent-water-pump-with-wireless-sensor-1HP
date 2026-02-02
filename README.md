@@ -1,4 +1,4 @@
-# Automatic Water Pump Controller (1 HP) with Wireless Ultrasonic sensor Unit
+# Intelligent Water Pump Controller (1 HP) with Wireless Ultrasonic sensor Unit
 ___
 It is an automatic water pump motor control and level monitoring system with inteligent safety features. It has 2 units, first one is the main controll unit and second one is the senor unit.
 Main control unit is an indoor unit which will show the water level in the inbuilt LCD screen and control the water pump motor according to water level and user settings. Contains too many safety features and alarm indications.

@@ -1,7 +1,0 @@
-https://github.com/Yadukrishnan-KM/Auto_Water_Pump_1HP
-
-Project name: Auto_Water_Pump_1HP
-
-branch name: main
-
-git push Auto_Water_Pump_1HP main

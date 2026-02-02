@@ -1,2 +1,0 @@
-The ultrasonic sensor, which using in this project have different varients. By looking it may same. But some is activated by giving +ve to the trigger pin.
-Some by giving -ve to trigger pin. So, need to chabge the trigger pin DigitalWrite accordingalyin the program.
