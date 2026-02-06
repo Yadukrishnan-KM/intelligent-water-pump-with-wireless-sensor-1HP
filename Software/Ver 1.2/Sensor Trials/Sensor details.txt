@@ -1,0 +1,32 @@
+
+**************************************************************************************
+
+File Created By: Yadukrishnan KM
+Date:02/2025
+Project Name: Auto Water Pump Tx Unit
+
+**************************************************************************************
+
+Module Name: DYP A02YYUW Waterproof Ultrasonic Sensor (3~450cm, UART, IP67)
+
+**************************************************************************************
+
+Brought from: https://robu.in/product/dfrobot-a02yyuw-waterproof-ultrasonic-sensor/
+Water proof module an dsensor head, UART auto mode
+price:1599
+
+**************************************************************************************
+UART Auto Output is Working in Default (Check datasheet for more details)
+
+Connection: The Tx pin(White pin the 4th pin) shold connect to the Rx of the 
+            microcontroller. The Rx (Yellow pin the 3rd pin) no need to connect.
+            Red is Vcc and Black id GND. 3.3 to 5V workin range.
+
+Program: Follow the manual instructions for data read. Using sofware serial.
+
+
+**************************************************************************************
+
+Current Consumption: Cycling between 11,9,5,3.3 mA @ 5V
+
+**************************************************************************************

@@ -1,3 +1,0 @@
-transmitter circuit -minicore atmega328p
-main controller circuit - arduino nano 
-because the interuppt not working in minicore library

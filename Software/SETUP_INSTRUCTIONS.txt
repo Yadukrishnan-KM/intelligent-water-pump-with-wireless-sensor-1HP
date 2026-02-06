@@ -1,0 +1,61 @@
+
+Project name: Intelligent water pump controller with wireless sensor unit - 1HP
+Author:Yadukrishnan K M
+
+================================================================================
+           Microcontroller Settings & Programming Instructions
+================================================================================
+
+Transmitter Circuit (Sensor Unit)
+---------------------------------
+Board Package     : MiniCore
+Chip              : ATmega328P
+Clock             : Internal 8 MHz
+Bootloader        : Optional (if you want UART programming)
+
+Main Controller Circuit
+-----------------------
+Board             : Arduino Nano
+  (Reason: Interrupt on pin 2 works reliably only with official Nano board)
+Chip              : ATmega328P
+Clock             : External 16 MHz crystal
+  IMPORTANT: Board must have 16 MHz crystal + two 22 pF capacitors soldered
+
+Code Upload Methods
+===================
+
+Preferred Method – ISP (most reliable – recommended)
+----------------------------------------------------
+Tool              : USBasp programmer (or any AVR ISP programmer)
+Connection        : ICSP header (MOSI, MISO, SCK, RESET, VCC, GND)
+Arduino IDE steps :
+  Tools → Programmer → USBasp
+  Sketch → Upload Using Programmer
+
+UART / Serial Upload (only after bootloader is installed)
+---------------------------------------------------------
+Step 1 – Burn Bootloader (one-time – use ISP)
+  Select correct board (Arduino Nano or MiniCore)
+  Tools → Programmer → USBasp
+  Tools → Burn Bootloader
+
+Step 2 – Upload code via UART
+  Connect USB-to-serial adapter (FTDI / CH340 / CP2102 etc.)
+  Select correct COM port in Tools → Port
+  Sketch → Upload
+
+Very Important Notes
+--------------------
+* If no 16 MHz crystal → UART upload WILL FAIL
+* If no bootloader burned → UART upload WILL FAIL
+* ISP method never depends on crystal or bootloader – always works
+* Use ISP during development – it is faster and safer
+
+Recommendation (simple rule)
+----------------------------
+Always use ISP (USBasp) whenever possible.
+Use UART only after bootloader is burned once.
+
+================================================================================
+End of Instructions
+================================================================================
